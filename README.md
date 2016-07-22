@@ -3,7 +3,7 @@
 # Captain Morgans Relationships
 
 ## Instructions
-
+  0. The storyboard has been started for you. Your class file names should match those designated here.
   1. Navigate to the `swift_captain_morgans_relationships_lab.xcdatamodeld`.
   2. Create three entities with attributes and relationships: Pirate, Ship, Engine.
     * Pirates have many ships, and a name.
