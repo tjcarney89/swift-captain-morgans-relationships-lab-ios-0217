@@ -8,7 +8,7 @@
     * Pirates have many ships, and a name.
     * Ships have one Pirate, one Engine, and a name.
     * Engines have a `String` attribute describing its propulsion type (i.e. sail, gas, or electric) and one ship. 
-  3. Create a `DataStore` and write the implementation for `generateTestData` and `fetchData`.  
+  3. Create a `DataStore` and write the implementation for the standard functions, as well as `generateTestData` and `fetchData`.  
   4. Make sure everything shows up!
 
 ## Advanced
