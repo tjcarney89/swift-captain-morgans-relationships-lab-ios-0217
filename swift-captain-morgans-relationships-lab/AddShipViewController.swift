@@ -18,11 +18,11 @@ class AddShipViewController: UIViewController {
     let dataStore = DataStore.shareDataStore
     
     @IBAction func saveButtonTapped(_ sender: AnyObject) {
-        guard let shipName = shipNameField.text , shipName.characters.count > 0 else { print("Ship name too short"); return }
-        guard let engineName = engineTypeField.text , engineName.characters.count > 0 else { print("Engine name too short."); return }
+        guard let ship = shipNameField.text , ship.characters.count > 0 else { print("Ship name too short"); return }
+        guard let engine = engineTypeField.text , engine.characters.count > 0 else { print("Engine name too short."); return }
         
-        createShip(shipName: shipName, engineName: engineName)
-    
+        create(ship, engine)
+        
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -36,7 +36,7 @@ class AddShipViewController: UIViewController {
 // MARK: Create new Ship for Pirate
 extension AddShipViewController {
     
-    fileprivate func createShip(shipName ship: String, engineName engine: String) {
+    fileprivate func create(_ ship: String, _ engine: String) {
         let managedObjectContext = dataStore.managedObjectContext
         let newShip: Ship = NSEntityDescription.insertNewObject(forEntityName: "Ship", into: managedObjectContext) as! Ship
         
@@ -52,9 +52,6 @@ extension AddShipViewController {
         } catch let error {
             print("Jim sunk your ship: \(error)")
         }
-
-        
     }
-    
     
 }

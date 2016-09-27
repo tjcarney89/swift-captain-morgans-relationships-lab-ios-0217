@@ -22,7 +22,6 @@ class PiratesViewController: UITableViewController, NSFetchedResultsControllerDe
     override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(true)
-        let store = DataStore.shareDataStore
         store.fetchData()
         tableView.reloadData()
     }

@@ -13,11 +13,11 @@ import CoreData
 class Engine: NSManagedObject {
 
     enum EngineType: String {
-        case Sail = "Sail"
-        case Gas = "Gas"
-        case Electric = "Electric"
-        case Solar = "Solar"
-        case Oars = "Oars"
+        case sail = "Sail"
+        case gas = "Gas"
+        case electric = "Electric"
+        case solar = "Solar"
+        case oars = "Oars"
     }
     
     class func randomEngineType() -> String
@@ -27,15 +27,15 @@ class Engine: NSManagedObject {
         switch (randomInt)
         {
         case 0:
-            return EngineType.Sail.rawValue
+            return EngineType.sail.rawValue
         case 1:
-            return EngineType.Gas.rawValue
+            return EngineType.gas.rawValue
         case 2:
-            return EngineType.Electric.rawValue
+            return EngineType.electric.rawValue
         case 3:
-            return EngineType.Solar.rawValue
+            return EngineType.solar.rawValue
         default:
-            return EngineType.Oars.rawValue
+            return EngineType.oars.rawValue
         }
     }
     
