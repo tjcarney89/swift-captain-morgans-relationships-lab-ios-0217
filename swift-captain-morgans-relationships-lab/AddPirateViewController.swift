@@ -8,18 +8,38 @@
 
 import UIKit
 import CoreData
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 class AddPirateViewController: UIViewController
 {
     @IBOutlet weak var pirateNameField: UITextField!
     
-    @IBAction func saveButtonTapped(sender: AnyObject)
+    @IBAction func saveButtonTapped(_ sender: AnyObject)
     {
-        if let text = pirateNameField.text where pirateNameField.text?.characters.count > 0
+        if let text = pirateNameField.text , pirateNameField.text?.characters.count > 0
         {
             let dataStore = DataStore()
             let managedObjectContext = dataStore.managedObjectContext
-            let newPirate = NSEntityDescription.insertNewObjectForEntityForName("Pirate", inManagedObjectContext: managedObjectContext) as! Pirate
+            let newPirate = NSEntityDescription.insertNewObject(forEntityName: "Pirate", into: managedObjectContext) as! Pirate
             
             newPirate.name = text
             
@@ -31,13 +51,13 @@ class AddPirateViewController: UIViewController
                 print("Could not save Pirate: \(error)")
             }
             
-            self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
 
         }
 }
     
-    @IBAction func cancelButtonTapped(sender: AnyObject)
+    @IBAction func cancelButtonTapped(_ sender: AnyObject)
     {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }

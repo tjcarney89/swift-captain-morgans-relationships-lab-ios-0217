@@ -19,7 +19,7 @@ class PiratesViewController: UITableViewController, NSFetchedResultsControllerDe
         super.viewDidLoad()
     }
     
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(true)
         let store = DataStore.shareDataStore
@@ -27,28 +27,28 @@ class PiratesViewController: UITableViewController, NSFetchedResultsControllerDe
         tableView.reloadData()
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return store.pirates.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath)
         let pirates = Array(store.pirates)
-        let currentPirate = pirates[indexPath.row]
+        let currentPirate = pirates[(indexPath as NSIndexPath).row]
         cell.textLabel?.text = currentPirate.name
         cell.detailTextLabel?.text = String.init(format: "%lu", currentPirate.ships.count)
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier == "shipsSegue"
         {
-            let nextVC = segue.destinationViewController as! ShipsViewController
+            let nextVC = segue.destination as! ShipsViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow!
-            let selectedPirate = store.pirates[selectedIndexPath.row]
+            let selectedPirate = store.pirates[(selectedIndexPath as NSIndexPath).row]
             nextVC.pirate = selectedPirate
         }
     }

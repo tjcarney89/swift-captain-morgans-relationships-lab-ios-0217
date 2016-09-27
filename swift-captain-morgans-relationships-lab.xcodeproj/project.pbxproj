@@ -18,8 +18,6 @@
 		4C45CA921D3A9A7F0030A41D /* swift_captain_morgans_relationships_lab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C45CA901D3A9A7F0030A41D /* swift_captain_morgans_relationships_lab.xcdatamodeld */; };
 		4C45CA941D3A9A7F0030A41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C45CA931D3A9A7F0030A41D /* Assets.xcassets */; };
 		4C45CA971D3A9A7F0030A41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45CA951D3A9A7F0030A41D /* LaunchScreen.storyboard */; };
-		4C45CAA21D3A9A7F0030A41D /* swift_captain_morgans_relationships_labTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45CAA11D3A9A7F0030A41D /* swift_captain_morgans_relationships_labTests.swift */; };
-		4C45CAAD1D3A9A7F0030A41D /* swift_captain_morgans_relationships_labUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45CAAC1D3A9A7F0030A41D /* swift_captain_morgans_relationships_labUITests.swift */; };
 		4C45CAC11D3AAD400030A41D /* AddShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45CAC01D3AAD400030A41D /* AddShipViewController.swift */; };
 		4C45CAC31D3AAD720030A41D /* AddPirateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45CAC21D3AAD720030A41D /* AddPirateViewController.swift */; };
 		4C45CAC51D3AADB20030A41D /* ShipDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45CAC41D3AADB20030A41D /* ShipDetailViewController.swift */; };
@@ -27,23 +25,6 @@
 		4C45CAC91D3AADF10030A41D /* ShipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45CAC81D3AADF10030A41D /* ShipsViewController.swift */; };
 		4C45CACB1D3AAEA60030A41D /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45CACA1D3AAEA60030A41D /* DataStore.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4C45CA9E1D3A9A7F0030A41D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C45CA7E1D3A9A7F0030A41D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C45CA851D3A9A7F0030A41D;
-			remoteInfo = "swift-captain-morgans-relationships-lab";
-		};
-		4C45CAA91D3A9A7F0030A41D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C45CA7E1D3A9A7F0030A41D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C45CA851D3A9A7F0030A41D;
-			remoteInfo = "swift-captain-morgans-relationships-lab";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1B72E5C71D3D5EF0007483AC /* Pirate+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pirate+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -59,12 +40,6 @@
 		4C45CA931D3A9A7F0030A41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C45CA961D3A9A7F0030A41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C45CA981D3A9A7F0030A41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C45CA9D1D3A9A7F0030A41D /* swift-captain-morgans-relationships-labTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-captain-morgans-relationships-labTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C45CAA11D3A9A7F0030A41D /* swift_captain_morgans_relationships_labTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_captain_morgans_relationships_labTests.swift; sourceTree = "<group>"; };
-		4C45CAA31D3A9A7F0030A41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C45CAA81D3A9A7F0030A41D /* swift-captain-morgans-relationships-labUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-captain-morgans-relationships-labUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C45CAAC1D3A9A7F0030A41D /* swift_captain_morgans_relationships_labUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_captain_morgans_relationships_labUITests.swift; sourceTree = "<group>"; };
-		4C45CAAE1D3A9A7F0030A41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C45CAC01D3AAD400030A41D /* AddShipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShipViewController.swift; sourceTree = "<group>"; };
 		4C45CAC21D3AAD720030A41D /* AddPirateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPirateViewController.swift; sourceTree = "<group>"; };
 		4C45CAC41D3AADB20030A41D /* ShipDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipDetailViewController.swift; sourceTree = "<group>"; };
@@ -81,20 +56,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C45CA9A1D3A9A7F0030A41D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C45CAA51D3A9A7F0030A41D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,8 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				4C45CA881D3A9A7F0030A41D /* swift-captain-morgans-relationships-lab */,
-				4C45CAA01D3A9A7F0030A41D /* swift-captain-morgans-relationships-labTests */,
-				4C45CAAB1D3A9A7F0030A41D /* swift-captain-morgans-relationships-labUITests */,
 				4C45CA871D3A9A7F0030A41D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				4C45CA861D3A9A7F0030A41D /* swift-captain-morgans-relationships-lab.app */,
-				4C45CA9D1D3A9A7F0030A41D /* swift-captain-morgans-relationships-labTests.xctest */,
-				4C45CAA81D3A9A7F0030A41D /* swift-captain-morgans-relationships-labUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,24 +100,6 @@
 			path = "swift-captain-morgans-relationships-lab";
 			sourceTree = "<group>";
 		};
-		4C45CAA01D3A9A7F0030A41D /* swift-captain-morgans-relationships-labTests */ = {
-			isa = PBXGroup;
-			children = (
-				4C45CAA11D3A9A7F0030A41D /* swift_captain_morgans_relationships_labTests.swift */,
-				4C45CAA31D3A9A7F0030A41D /* Info.plist */,
-			);
-			path = "swift-captain-morgans-relationships-labTests";
-			sourceTree = "<group>";
-		};
-		4C45CAAB1D3A9A7F0030A41D /* swift-captain-morgans-relationships-labUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4C45CAAC1D3A9A7F0030A41D /* swift_captain_morgans_relationships_labUITests.swift */,
-				4C45CAAE1D3A9A7F0030A41D /* Info.plist */,
-			);
-			path = "swift-captain-morgans-relationships-labUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,47 +120,6 @@
 			productReference = 4C45CA861D3A9A7F0030A41D /* swift-captain-morgans-relationships-lab.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C45CA9C1D3A9A7F0030A41D /* swift-captain-morgans-relationships-labTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C45CAB41D3A9A7F0030A41D /* Build configuration list for PBXNativeTarget "swift-captain-morgans-relationships-labTests" */;
-			buildPhases = (
-				ACEC76683E062E58E090611A /* [CP] Check Pods Manifest.lock */,
-				4C45CA991D3A9A7F0030A41D /* Sources */,
-				4C45CA9A1D3A9A7F0030A41D /* Frameworks */,
-				4C45CA9B1D3A9A7F0030A41D /* Resources */,
-				782ED219E16FCD633E336EA3 /* [CP] Embed Pods Frameworks */,
-				59DFF7C8EB3E2D9C004A0F38 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C45CA9F1D3A9A7F0030A41D /* PBXTargetDependency */,
-			);
-			name = "swift-captain-morgans-relationships-labTests";
-			productName = "swift-captain-morgans-relationships-labTests";
-			productReference = 4C45CA9D1D3A9A7F0030A41D /* swift-captain-morgans-relationships-labTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4C45CAA71D3A9A7F0030A41D /* swift-captain-morgans-relationships-labUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C45CAB71D3A9A7F0030A41D /* Build configuration list for PBXNativeTarget "swift-captain-morgans-relationships-labUITests" */;
-			buildPhases = (
-				FD4C278B48AF6E4C44DE5583 /* [CP] Check Pods Manifest.lock */,
-				4C45CAA41D3A9A7F0030A41D /* Sources */,
-				4C45CAA51D3A9A7F0030A41D /* Frameworks */,
-				4C45CAA61D3A9A7F0030A41D /* Resources */,
-				F0023ADD6CF20543ECB427D7 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C45CAAA1D3A9A7F0030A41D /* PBXTargetDependency */,
-			);
-			name = "swift-captain-morgans-relationships-labUITests";
-			productName = "swift-captain-morgans-relationships-labUITests";
-			productReference = 4C45CAA81D3A9A7F0030A41D /* swift-captain-morgans-relationships-labUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,24 +127,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Flatiron School";
 				TargetAttributes = {
 					4C45CA851D3A9A7F0030A41D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
 							};
 						};
-					};
-					4C45CA9C1D3A9A7F0030A41D = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 4C45CA851D3A9A7F0030A41D;
-					};
-					4C45CAA71D3A9A7F0030A41D = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 4C45CA851D3A9A7F0030A41D;
 					};
 				};
 			};
@@ -264,8 +155,6 @@
 			projectRoot = "";
 			targets = (
 				4C45CA851D3A9A7F0030A41D /* swift-captain-morgans-relationships-lab */,
-				4C45CA9C1D3A9A7F0030A41D /* swift-captain-morgans-relationships-labTests */,
-				4C45CAA71D3A9A7F0030A41D /* swift-captain-morgans-relationships-labUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,99 +170,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C45CA9B1D3A9A7F0030A41D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C45CAA61D3A9A7F0030A41D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		59DFF7C8EB3E2D9C004A0F38 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-captain-morgans-relationships-labTests/Pods-swift-captain-morgans-relationships-labTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		782ED219E16FCD633E336EA3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-captain-morgans-relationships-labTests/Pods-swift-captain-morgans-relationships-labTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ACEC76683E062E58E090611A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F0023ADD6CF20543ECB427D7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-captain-morgans-relationships-labUITests/Pods-swift-captain-morgans-relationships-labUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD4C278B48AF6E4C44DE5583 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C45CA821D3A9A7F0030A41D /* Sources */ = {
@@ -397,36 +194,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C45CA991D3A9A7F0030A41D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C45CAA21D3A9A7F0030A41D /* swift_captain_morgans_relationships_labTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C45CAA41D3A9A7F0030A41D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C45CAAD1D3A9A7F0030A41D /* swift_captain_morgans_relationships_labUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4C45CA9F1D3A9A7F0030A41D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C45CA851D3A9A7F0030A41D /* swift-captain-morgans-relationships-lab */;
-			targetProxy = 4C45CA9E1D3A9A7F0030A41D /* PBXContainerItemProxy */;
-		};
-		4C45CAAA1D3A9A7F0030A41D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C45CA851D3A9A7F0030A41D /* swift-captain-morgans-relationships-lab */;
-			targetProxy = 4C45CAA91D3A9A7F0030A41D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4C45CA8D1D3A9A7F0030A41D /* Main.storyboard */ = {
@@ -462,8 +230,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -508,8 +278,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -528,6 +300,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -541,6 +314,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FlatironSchool.swift-captain-morgans-relationships-lab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -552,52 +326,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FlatironSchool.swift-captain-morgans-relationships-lab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		4C45CAB51D3A9A7F0030A41D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "swift-captain-morgans-relationships-labTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FlatironSchool.swift-captain-morgans-relationships-labTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-captain-morgans-relationships-lab.app/swift-captain-morgans-relationships-lab";
-			};
-			name = Debug;
-		};
-		4C45CAB61D3A9A7F0030A41D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "swift-captain-morgans-relationships-labTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FlatironSchool.swift-captain-morgans-relationships-labTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-captain-morgans-relationships-lab.app/swift-captain-morgans-relationships-lab";
-			};
-			name = Release;
-		};
-		4C45CAB81D3A9A7F0030A41D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "swift-captain-morgans-relationships-labUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FlatironSchool.swift-captain-morgans-relationships-labUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "swift-captain-morgans-relationships-lab";
-			};
-			name = Debug;
-		};
-		4C45CAB91D3A9A7F0030A41D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "swift-captain-morgans-relationships-labUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FlatironSchool.swift-captain-morgans-relationships-labUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "swift-captain-morgans-relationships-lab";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -618,24 +347,6 @@
 			buildConfigurations = (
 				4C45CAB21D3A9A7F0030A41D /* Debug */,
 				4C45CAB31D3A9A7F0030A41D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C45CAB41D3A9A7F0030A41D /* Build configuration list for PBXNativeTarget "swift-captain-morgans-relationships-labTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C45CAB51D3A9A7F0030A41D /* Debug */,
-				4C45CAB61D3A9A7F0030A41D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C45CAB71D3A9A7F0030A41D /* Build configuration list for PBXNativeTarget "swift-captain-morgans-relationships-labUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C45CAB81D3A9A7F0030A41D /* Debug */,
-				4C45CAB91D3A9A7F0030A41D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

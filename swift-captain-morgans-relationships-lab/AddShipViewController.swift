@@ -17,18 +17,18 @@ class AddShipViewController: UIViewController {
     var pirate: Pirate!
     let dataStore = DataStore.shareDataStore
     
-    @IBAction func saveButtonTapped(sender: AnyObject) {
-        guard let shipName = shipNameField.text where shipName.characters.count > 0 else { print("Ship name too short"); return }
-        guard let engineName = engineTypeField.text where engineName.characters.count > 0 else { print("Engine name too short."); return }
+    @IBAction func saveButtonTapped(_ sender: AnyObject) {
+        guard let shipName = shipNameField.text , shipName.characters.count > 0 else { print("Ship name too short"); return }
+        guard let engineName = engineTypeField.text , engineName.characters.count > 0 else { print("Engine name too short."); return }
         
         createShip(shipName: shipName, engineName: engineName)
     
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     
-    @IBAction func cancelButtonTapped(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func cancelButtonTapped(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
@@ -36,12 +36,12 @@ class AddShipViewController: UIViewController {
 // MARK: Create new Ship for Pirate
 extension AddShipViewController {
     
-    private func createShip(shipName ship: String, engineName engine: String) {
+    fileprivate func createShip(shipName ship: String, engineName engine: String) {
         let managedObjectContext = dataStore.managedObjectContext
-        let newShip: Ship = NSEntityDescription.insertNewObjectForEntityForName("Ship", inManagedObjectContext: managedObjectContext) as! Ship
+        let newShip: Ship = NSEntityDescription.insertNewObject(forEntityName: "Ship", into: managedObjectContext) as! Ship
         
         newShip.name = ship
-        newShip.engine = NSEntityDescription.insertNewObjectForEntityForName("Engine", inManagedObjectContext: managedObjectContext) as! Engine
+        newShip.engine = NSEntityDescription.insertNewObject(forEntityName: "Engine", into: managedObjectContext) as! Engine
         newShip.engine.engineType = engine
         
         pirate.ships.insert(newShip)

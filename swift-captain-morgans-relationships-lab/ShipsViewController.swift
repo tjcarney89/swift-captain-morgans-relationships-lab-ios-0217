@@ -25,32 +25,32 @@ class ShipsViewController: UITableViewController
         super.viewDidLoad()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         ships = Array(pirate.ships)
     }
     
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pirate.ships.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier, forIndexPath: indexPath)
-        let currentShip = ships[indexPath.row]
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath)
+        let currentShip = ships[(indexPath as NSIndexPath).row]
         cell.textLabel?.text = currentShip.name
         cell.detailTextLabel?.text = currentShip.engine.engineType
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "shipDetailSegue" {
             
-            let nextVC = segue.destinationViewController as! ShipDetailViewController
+            let nextVC = segue.destination as! ShipDetailViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow!
-            nextVC.ship = ships[selectedIndexPath.row]
+            nextVC.ship = ships[(selectedIndexPath as NSIndexPath).row]
         } else {
-            let nextVC = segue.destinationViewController as! AddShipViewController            
+            let nextVC = segue.destination as! AddShipViewController            
             nextVC.pirate = self.pirate
         }
     }
