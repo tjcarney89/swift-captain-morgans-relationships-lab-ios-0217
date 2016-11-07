@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B2C9CE81DD121C000B0ABA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9CE71DD121C000B0ABA2 /* AppDelegate.swift */; };
+		1B2C9CEA1DD121C000B0ABA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9CE91DD121C000B0ABA2 /* ViewController.swift */; };
+		1B2C9CED1DD121C000B0ABA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2C9CEB1DD121C000B0ABA2 /* Main.storyboard */; };
+		1B2C9CF01DD121C000B0ABA2 /* CaptainMorgansRelationships.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9CEE1DD121C000B0ABA2 /* CaptainMorgansRelationships.xcdatamodeld */; };
+		1B2C9CF21DD121C000B0ABA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2C9CF11DD121C000B0ABA2 /* Assets.xcassets */; };
+		1B2C9CF51DD121C000B0ABA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2C9CF31DD121C000B0ABA2 /* LaunchScreen.storyboard */; };
+		1B2C9D001DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9CFF1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests.swift */; };
+		1B2C9D0B1DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9D0A1DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests.swift */; };
+		1B2C9D191DD1228500B0ABA2 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9D181DD1228500B0ABA2 /* DataStore.swift */; };
+		1B2C9D1F1DD1288E00B0ABA2 /* AddPirateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9D1A1DD1288E00B0ABA2 /* AddPirateViewController.swift */; };
+		1B2C9D201DD1288E00B0ABA2 /* AddShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9D1B1DD1288E00B0ABA2 /* AddShipViewController.swift */; };
+		1B2C9D211DD1288E00B0ABA2 /* PiratesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9D1C1DD1288E00B0ABA2 /* PiratesViewController.swift */; };
+		1B2C9D221DD1288E00B0ABA2 /* ShipDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9D1D1DD1288E00B0ABA2 /* ShipDetailViewController.swift */; };
+		1B2C9D231DD1288E00B0ABA2 /* ShipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C9D1E1DD1288E00B0ABA2 /* ShipsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B2C9CFC1DD121C000B0ABA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B2C9CDC1DD121C000B0ABA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B2C9CE31DD121C000B0ABA2;
+			remoteInfo = CaptainMorgansRelationships;
+		};
+		1B2C9D071DD121C000B0ABA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B2C9CDC1DD121C000B0ABA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B2C9CE31DD121C000B0ABA2;
+			remoteInfo = CaptainMorgansRelationships;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B2C9CE41DD121C000B0ABA2 /* CaptainMorgansRelationships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptainMorgansRelationships.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2C9CE71DD121C000B0ABA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B2C9CE91DD121C000B0ABA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B2C9CEC1DD121C000B0ABA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B2C9CEF1DD121C000B0ABA2 /* CaptainMorgansRelationships.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaptainMorgansRelationships.xcdatamodel; sourceTree = "<group>"; };
+		1B2C9CF11DD121C000B0ABA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B2C9CF41DD121C000B0ABA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B2C9CF61DD121C000B0ABA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2C9CFB1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptainMorgansRelationshipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2C9CFF1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptainMorgansRelationshipsTests.swift; sourceTree = "<group>"; };
+		1B2C9D011DD121C000B0ABA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2C9D061DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptainMorgansRelationshipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2C9D0A1DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptainMorgansRelationshipsUITests.swift; sourceTree = "<group>"; };
+		1B2C9D0C1DD121C000B0ABA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2C9D181DD1228500B0ABA2 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		1B2C9D1A1DD1288E00B0ABA2 /* AddPirateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPirateViewController.swift; sourceTree = "<group>"; };
+		1B2C9D1B1DD1288E00B0ABA2 /* AddShipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShipViewController.swift; sourceTree = "<group>"; };
+		1B2C9D1C1DD1288E00B0ABA2 /* PiratesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiratesViewController.swift; sourceTree = "<group>"; };
+		1B2C9D1D1DD1288E00B0ABA2 /* ShipDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipDetailViewController.swift; sourceTree = "<group>"; };
+		1B2C9D1E1DD1288E00B0ABA2 /* ShipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B2C9CE11DD121C000B0ABA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2C9CF81DD121C000B0ABA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2C9D031DD121C000B0ABA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B2C9CDB1DD121C000B0ABA2 = {
+			isa = PBXGroup;
+			children = (
+				1B2C9CE61DD121C000B0ABA2 /* CaptainMorgansRelationships */,
+				1B2C9CFE1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests */,
+				1B2C9D091DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests */,
+				1B2C9CE51DD121C000B0ABA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B2C9CE51DD121C000B0ABA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B2C9CE41DD121C000B0ABA2 /* CaptainMorgansRelationships.app */,
+				1B2C9CFB1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests.xctest */,
+				1B2C9D061DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B2C9CE61DD121C000B0ABA2 /* CaptainMorgansRelationships */ = {
+			isa = PBXGroup;
+			children = (
+				1B2C9CE71DD121C000B0ABA2 /* AppDelegate.swift */,
+				1B2C9CE91DD121C000B0ABA2 /* ViewController.swift */,
+				1B2C9D181DD1228500B0ABA2 /* DataStore.swift */,
+				1B2C9CEB1DD121C000B0ABA2 /* Main.storyboard */,
+				1B2C9D1A1DD1288E00B0ABA2 /* AddPirateViewController.swift */,
+				1B2C9D1B1DD1288E00B0ABA2 /* AddShipViewController.swift */,
+				1B2C9D1C1DD1288E00B0ABA2 /* PiratesViewController.swift */,
+				1B2C9D1D1DD1288E00B0ABA2 /* ShipDetailViewController.swift */,
+				1B2C9D1E1DD1288E00B0ABA2 /* ShipsViewController.swift */,
+				1B2C9CF11DD121C000B0ABA2 /* Assets.xcassets */,
+				1B2C9CF31DD121C000B0ABA2 /* LaunchScreen.storyboard */,
+				1B2C9CF61DD121C000B0ABA2 /* Info.plist */,
+				1B2C9CEE1DD121C000B0ABA2 /* CaptainMorgansRelationships.xcdatamodeld */,
+			);
+			path = CaptainMorgansRelationships;
+			sourceTree = "<group>";
+		};
+		1B2C9CFE1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B2C9CFF1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests.swift */,
+				1B2C9D011DD121C000B0ABA2 /* Info.plist */,
+			);
+			path = CaptainMorgansRelationshipsTests;
+			sourceTree = "<group>";
+		};
+		1B2C9D091DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B2C9D0A1DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests.swift */,
+				1B2C9D0C1DD121C000B0ABA2 /* Info.plist */,
+			);
+			path = CaptainMorgansRelationshipsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B2C9CE31DD121C000B0ABA2 /* CaptainMorgansRelationships */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B2C9D0F1DD121C000B0ABA2 /* Build configuration list for PBXNativeTarget "CaptainMorgansRelationships" */;
+			buildPhases = (
+				1B2C9CE01DD121C000B0ABA2 /* Sources */,
+				1B2C9CE11DD121C000B0ABA2 /* Frameworks */,
+				1B2C9CE21DD121C000B0ABA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaptainMorgansRelationships;
+			productName = CaptainMorgansRelationships;
+			productReference = 1B2C9CE41DD121C000B0ABA2 /* CaptainMorgansRelationships.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B2C9CFA1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B2C9D121DD121C000B0ABA2 /* Build configuration list for PBXNativeTarget "CaptainMorgansRelationshipsTests" */;
+			buildPhases = (
+				1B2C9CF71DD121C000B0ABA2 /* Sources */,
+				1B2C9CF81DD121C000B0ABA2 /* Frameworks */,
+				1B2C9CF91DD121C000B0ABA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B2C9CFD1DD121C000B0ABA2 /* PBXTargetDependency */,
+			);
+			name = CaptainMorgansRelationshipsTests;
+			productName = CaptainMorgansRelationshipsTests;
+			productReference = 1B2C9CFB1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B2C9D051DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B2C9D151DD121C000B0ABA2 /* Build configuration list for PBXNativeTarget "CaptainMorgansRelationshipsUITests" */;
+			buildPhases = (
+				1B2C9D021DD121C000B0ABA2 /* Sources */,
+				1B2C9D031DD121C000B0ABA2 /* Frameworks */,
+				1B2C9D041DD121C000B0ABA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B2C9D081DD121C000B0ABA2 /* PBXTargetDependency */,
+			);
+			name = CaptainMorgansRelationshipsUITests;
+			productName = CaptainMorgansRelationshipsUITests;
+			productReference = 1B2C9D061DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B2C9CDC1DD121C000B0ABA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Flatiron School";
+				TargetAttributes = {
+					1B2C9CE31DD121C000B0ABA2 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					1B2C9CFA1DD121C000B0ABA2 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1B2C9CE31DD121C000B0ABA2;
+					};
+					1B2C9D051DD121C000B0ABA2 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1B2C9CE31DD121C000B0ABA2;
+					};
+				};
+			};
+			buildConfigurationList = 1B2C9CDF1DD121C000B0ABA2 /* Build configuration list for PBXProject "CaptainMorgansRelationships" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B2C9CDB1DD121C000B0ABA2;
+			productRefGroup = 1B2C9CE51DD121C000B0ABA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B2C9CE31DD121C000B0ABA2 /* CaptainMorgansRelationships */,
+				1B2C9CFA1DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests */,
+				1B2C9D051DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B2C9CE21DD121C000B0ABA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2C9CF51DD121C000B0ABA2 /* LaunchScreen.storyboard in Resources */,
+				1B2C9CF21DD121C000B0ABA2 /* Assets.xcassets in Resources */,
+				1B2C9CED1DD121C000B0ABA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2C9CF91DD121C000B0ABA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2C9D041DD121C000B0ABA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B2C9CE01DD121C000B0ABA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2C9CEA1DD121C000B0ABA2 /* ViewController.swift in Sources */,
+				1B2C9D211DD1288E00B0ABA2 /* PiratesViewController.swift in Sources */,
+				1B2C9D191DD1228500B0ABA2 /* DataStore.swift in Sources */,
+				1B2C9D201DD1288E00B0ABA2 /* AddShipViewController.swift in Sources */,
+				1B2C9D231DD1288E00B0ABA2 /* ShipsViewController.swift in Sources */,
+				1B2C9D1F1DD1288E00B0ABA2 /* AddPirateViewController.swift in Sources */,
+				1B2C9CF01DD121C000B0ABA2 /* CaptainMorgansRelationships.xcdatamodeld in Sources */,
+				1B2C9CE81DD121C000B0ABA2 /* AppDelegate.swift in Sources */,
+				1B2C9D221DD1288E00B0ABA2 /* ShipDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2C9CF71DD121C000B0ABA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2C9D001DD121C000B0ABA2 /* CaptainMorgansRelationshipsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2C9D021DD121C000B0ABA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2C9D0B1DD121C000B0ABA2 /* CaptainMorgansRelationshipsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B2C9CFD1DD121C000B0ABA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B2C9CE31DD121C000B0ABA2 /* CaptainMorgansRelationships */;
+			targetProxy = 1B2C9CFC1DD121C000B0ABA2 /* PBXContainerItemProxy */;
+		};
+		1B2C9D081DD121C000B0ABA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B2C9CE31DD121C000B0ABA2 /* CaptainMorgansRelationships */;
+			targetProxy = 1B2C9D071DD121C000B0ABA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B2C9CEB1DD121C000B0ABA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B2C9CEC1DD121C000B0ABA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B2C9CF31DD121C000B0ABA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B2C9CF41DD121C000B0ABA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B2C9D0D1DD121C000B0ABA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B2C9D0E1DD121C000B0ABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B2C9D101DD121C000B0ABA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CaptainMorgansRelationships/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlatironSchool.CaptainMorgansRelationships;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1B2C9D111DD121C000B0ABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CaptainMorgansRelationships/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlatironSchool.CaptainMorgansRelationships;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1B2C9D131DD121C000B0ABA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CaptainMorgansRelationshipsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlatironSchool.CaptainMorgansRelationshipsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaptainMorgansRelationships.app/CaptainMorgansRelationships";
+			};
+			name = Debug;
+		};
+		1B2C9D141DD121C000B0ABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CaptainMorgansRelationshipsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlatironSchool.CaptainMorgansRelationshipsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaptainMorgansRelationships.app/CaptainMorgansRelationships";
+			};
+			name = Release;
+		};
+		1B2C9D161DD121C000B0ABA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CaptainMorgansRelationshipsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlatironSchool.CaptainMorgansRelationshipsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CaptainMorgansRelationships;
+			};
+			name = Debug;
+		};
+		1B2C9D171DD121C000B0ABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CaptainMorgansRelationshipsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlatironSchool.CaptainMorgansRelationshipsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CaptainMorgansRelationships;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B2C9CDF1DD121C000B0ABA2 /* Build configuration list for PBXProject "CaptainMorgansRelationships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2C9D0D1DD121C000B0ABA2 /* Debug */,
+				1B2C9D0E1DD121C000B0ABA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B2C9D0F1DD121C000B0ABA2 /* Build configuration list for PBXNativeTarget "CaptainMorgansRelationships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2C9D101DD121C000B0ABA2 /* Debug */,
+				1B2C9D111DD121C000B0ABA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B2C9D121DD121C000B0ABA2 /* Build configuration list for PBXNativeTarget "CaptainMorgansRelationshipsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2C9D131DD121C000B0ABA2 /* Debug */,
+				1B2C9D141DD121C000B0ABA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B2C9D151DD121C000B0ABA2 /* Build configuration list for PBXNativeTarget "CaptainMorgansRelationshipsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2C9D161DD121C000B0ABA2 /* Debug */,
+				1B2C9D171DD121C000B0ABA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B2C9CEE1DD121C000B0ABA2 /* CaptainMorgansRelationships.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B2C9CEF1DD121C000B0ABA2 /* CaptainMorgansRelationships.xcdatamodel */,
+			);
+			currentVersion = 1B2C9CEF1DD121C000B0ABA2 /* CaptainMorgansRelationships.xcdatamodel */;
+			path = CaptainMorgansRelationships.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1B2C9CDC1DD121C000B0ABA2 /* Project object */;
+}
