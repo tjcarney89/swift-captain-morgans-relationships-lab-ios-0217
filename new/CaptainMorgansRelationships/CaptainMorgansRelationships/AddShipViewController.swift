@@ -44,7 +44,7 @@ extension AddShipViewController {
         newShip.engine = NSEntityDescription.insertNewObject(forEntityName: "Engine", into: context) as? Engine
         newShip.engine!.engineType = engine
         
-        pirate.addToShip(newShip)
+        pirate.addToShips(newShip)
         
         store.saveContext()
     }

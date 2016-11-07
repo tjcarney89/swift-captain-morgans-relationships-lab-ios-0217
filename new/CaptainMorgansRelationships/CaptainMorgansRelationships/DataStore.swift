@@ -80,7 +80,7 @@ class DataStore {
                 currentShip.name = "Awesome Ship #" + String(shipNumber + 1)
                 currentShip.engine = NSEntityDescription.insertNewObject(forEntityName: "Engine", into: context) as? Engine
                 currentShip.engine!.engineType = randomEngineType()
-                currentPirate.addToShip(currentShip)
+                currentPirate.addToShips(currentShip)
             }
         }
         

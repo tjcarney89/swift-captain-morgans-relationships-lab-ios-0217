@@ -6,12 +6,12 @@
     </entity>
     <entity name="Pirate" representedClassName="Pirate" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="ship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ship" inverseName="pirate" inverseEntity="Ship" syncable="YES"/>
+        <relationship name="ships" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ship" inverseName="pirate" inverseEntity="Ship" syncable="YES"/>
     </entity>
     <entity name="Ship" representedClassName="Ship" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="engine" maxCount="1" deletionRule="Nullify" destinationEntity="Engine" inverseName="ship" inverseEntity="Engine" syncable="YES"/>
-        <relationship name="pirate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pirate" inverseName="ship" inverseEntity="Pirate" syncable="YES"/>
+        <relationship name="pirate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pirate" inverseName="ships" inverseEntity="Pirate" syncable="YES"/>
     </entity>
     <elements>
         <element name="Engine" positionX="-63" positionY="-18" width="128" height="75"/>

@@ -37,7 +37,7 @@ class PiratesViewController: UITableViewController, NSFetchedResultsControllerDe
         let pirates = Array(store.pirates)
         let currentPirate = pirates[(indexPath as NSIndexPath).row]
         cell.textLabel?.text = currentPirate.name
-        cell.detailTextLabel?.text = String.init(format: "%lu", currentPirate.ships.count)
+        cell.detailTextLabel?.text = String.init(format: "%lu", currentPirate.ships!.count)
         return cell
     }
     

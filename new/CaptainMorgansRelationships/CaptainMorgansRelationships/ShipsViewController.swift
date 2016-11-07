@@ -27,19 +27,19 @@ class ShipsViewController: UITableViewController
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        ships = Array(pirate.ships)
+        ships = Array(pirate.ships!) as! [Ship]
     }
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pirate.ships.count
+        return pirate.ships!.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath)
         let currentShip = ships[(indexPath as NSIndexPath).row]
         cell.textLabel?.text = currentShip.name
-        cell.detailTextLabel?.text = currentShip.engine.engineType
+        cell.detailTextLabel?.text = currentShip.engine?.engineType
         return cell
     }
     
