@@ -4,7 +4,7 @@
 
 * Implement Core Data with only general instructions for relationships and attributes of entities.
 * Visualize saved content from Core Data.
-* Add and persistently store data to Core Data.s
+* Add and persistently store new data to Core Data.
 
 ## Instructions
 
@@ -13,9 +13,11 @@
   2. Create three entities with attributes and relationships: `Pirate`, `Ship`, `Engine`.
     * `Pirate`s have one name and many `Ship`s.
     * Ships have one `Pirate`, one `Engine`, and a name.
-    * `Engine`s have a `String` attribute describing its propulsion type (i.e. sail, gas, or electric) and one `Ship`. 
-  3. Create a `DataStore` and write the implementation for the standard functions, as well as `generateTestData()` and `fetchData()`.  
-  4. In the class files for your view controllers, make sure all relevant information for your `Pirate`s and `Ship`s appears appropriately.
+    * `Engine`s have a `String` attribute describing its `engineType`  and one `Ship`. 
+  3. Create a `DataStore` and write the implementation for the standard functions, as well as `generateTestData()` and `fetchData()`.
+    - `generateTestData()` should create twenty pirates, create ten ships per pirate, and set each ship's `engineType` to a random type out of `sail`, `gas`, `oars`, or `nuclear`.
+    - Generate this data without hardcoding the values.
+  4. In the class files for your view controllers, make sure all relevant information for your `Pirate`s and `Ship`s appears appropriately on screen.
 
 ## Advanced
 
