@@ -37,7 +37,7 @@ class ShipsViewController: UITableViewController
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath)
-        let currentShip = ships[(indexPath as NSIndexPath).row]
+        let currentShip = ships[indexPath.row]
         cell.textLabel?.text = currentShip.name
         cell.detailTextLabel?.text = currentShip.engine?.engineType
         return cell
@@ -48,7 +48,7 @@ class ShipsViewController: UITableViewController
             
             let nextVC = segue.destination as! ShipDetailViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow!
-            nextVC.ship = ships[(selectedIndexPath as NSIndexPath).row]
+            nextVC.ship = ships[selectedIndexPath.row]
         } else {
             let nextVC = segue.destination as! AddShipViewController            
             nextVC.pirate = self.pirate

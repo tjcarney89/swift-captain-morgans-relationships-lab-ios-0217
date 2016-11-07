@@ -35,9 +35,9 @@ class PiratesViewController: UITableViewController, NSFetchedResultsControllerDe
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath)
         let pirates = Array(store.pirates)
-        let currentPirate = pirates[(indexPath as NSIndexPath).row]
+        let currentPirate = pirates[indexPath.row]
         cell.textLabel?.text = currentPirate.name
-        cell.detailTextLabel?.text = String.init(format: "%lu", currentPirate.ships!.count)
+        cell.detailTextLabel?.text = String(currentPirate.ships!.count)
         return cell
     }
     
@@ -47,7 +47,7 @@ class PiratesViewController: UITableViewController, NSFetchedResultsControllerDe
         {
             let nextVC = segue.destination as! ShipsViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow!
-            let selectedPirate = store.pirates[(selectedIndexPath as NSIndexPath).row]
+            let selectedPirate = store.pirates[selectedIndexPath.row]
             nextVC.pirate = selectedPirate
         }
     }
